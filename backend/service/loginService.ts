@@ -2,8 +2,8 @@ import { Socket } from "socket.io";
 import jwt from 'jsonwebtoken';
 
 import { DefaultEventsMap } from "socket.io/dist/typed-events";
-import { verifySignature } from "../../../solana/SolanaHelpers";
-import { getUserOrCreate } from "../../../pg-core/backend/db/userCollection";
+import { verifySignature } from "../../../pd-solana/SolanaHelpers";
+import { getUserOrCreate } from "../../../pd-core/backend/db/userCollection";
 import { LoginRequest } from "../../type/LoginRequest";
 import { JWT_SECRETE, TOKEN_PAYLOAD_TYPE } from "../../utils/AuthHelpers";
 

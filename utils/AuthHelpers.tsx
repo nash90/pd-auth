@@ -4,14 +4,14 @@ import { Dispatch, useEffect } from "react";
 import { WalletContextState } from "@solana/wallet-adapter-react";
 import { getLoginStatus, login, logout } from "../frontend/api/LoginClientApi";
 import { ResLogin } from "../type/ResLogin";
-import { ResUser } from "../../pg-core/type/ResUser";
-import { FAILED_TO_AUTHENTICATE_LOGIN, FAILED_TO_DECODE_TOKEN, GAME_IS_DISABLED, GAME_SETTINGS_NOT_FOUND, INSUFFICIENT_DEPOSIT_BALANCE, TOKEN_NOT_FOUND } from "../../pg-core/error/errorMessages";
-import { getUserApi } from "../../pg-core/frontend/api/UserClientApi";
+import { ResUser } from "../../pd-core/type/ResUser";
+import { FAILED_TO_AUTHENTICATE_LOGIN, FAILED_TO_DECODE_TOKEN, GAME_IS_DISABLED, GAME_SETTINGS_NOT_FOUND, INSUFFICIENT_DEPOSIT_BALANCE, TOKEN_NOT_FOUND } from "../../pd-core/error/errorMessages";
+import { getUserApi } from "../../pd-core/frontend/api/UserClientApi";
 
-import { UserModel } from "../../pg-core/backend/db/UserModel";
-import { SettingsModel } from "../../pg-core/backend/db/SettingsModel";
-import { CommonActionParam } from "../../pg-core/frontend/reducers/CommonReducer";
-import { setGameUserAndSettingsAction, setTokenAction } from "../../pg-core/frontend/actions/CommonAction";
+import { UserModel } from "../../pd-core/backend/db/UserModel";
+import { SettingsModel } from "../../pd-core/backend/db/SettingsModel";
+import { CommonActionParam } from "../../pd-core/frontend/reducers/CommonReducer";
+import { setGameUserAndSettingsAction, setTokenAction } from "../../pd-core/frontend/actions/CommonAction";
 import { ResLoginStatus } from "../type/ResLoginStatus";
 
 export const JWT_SECRETE = process.env.JWT_SECRETE || "";

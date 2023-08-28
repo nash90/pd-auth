@@ -2,7 +2,7 @@ import { WalletContextState } from '@solana/wallet-adapter-react';
 import cookie from 'js-cookie';
 import { LoginRequest } from "../../type/LoginRequest";
 import { ResLogin } from "../../type/ResLogin";
-import { signMessageWithWalletAdapter } from '../../../solana/SolanaHelpers';
+import { signMessageWithWalletAdapter } from '../../../pd-solana/SolanaHelpers';
 import { ResLoginStatus } from '../../type/ResLoginStatus';
 
 async function login(walletAdapter: WalletContextState): Promise<ResLogin> {
