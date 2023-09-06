@@ -2,6 +2,18 @@
 
 This plugin provides a convenient way to integrate JWT based login function for solana wallet based app with frontend api client and backend functionality into your Next.js application. To use this plugin, follow the instructions below.
 
+## Dependencies
+Add/Install following node dependencies if not already
+```
+    "@solana-mobile/wallet-adapter-mobile": "^2.0.0",
+    "@solana/wallet-adapter-base": "^0.9.22",
+    "@solana/wallet-adapter-react": "^0.15.32",
+    "@solana/wallet-adapter-react-ui": "^0.9.31",
+    "@solana/wallet-adapter-wallets": "^0.19.16",
+    "@solana/web3.js": "^1.60.0",
+    "next": "12.2.0",
+    "react": "^18.2.0",
+```
 
 ## Adding Backend Routes
 
