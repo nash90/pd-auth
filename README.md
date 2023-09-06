@@ -1,6 +1,6 @@
-# Next.js App Plugin
+# Solana-JWT-Auth Plugin
 
-This Next.js app plugin provides a convenient way to integrate both frontend and backend functionality into your Next.js application. To use this plugin, follow the instructions below.
+This plugin provides a convenient way to integrate JWT based login function for solana wallet based app with frontend api client and backend functionality into your Next.js application. To use this plugin, follow the instructions below.
 
 
 ## Adding Backend Routes
